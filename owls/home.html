@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+<head>
+               <title>Owls.com</title>
+                         <link rel = "icon" href =
+        "images/2.png"
+        type = "image/x-icon">
+  <meta chrset="utf-8">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Limelight&family=Titillium+Web:wght@200;300&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+  
+  <style>
+   * {
+  box-sizing: border-box;
+}
+   body{
+		margin: 0;
+		font-family: tahoma;
+		font-size: 1.1em;
+	
+			}
+
+
+                    .navbar{
+				background-color: green;
+
+				overflow: hidden;
+                                 padding: 20px;
+                                    box-shadow: 6px 15px 30px #278a48;
+                                 
+			}
+
+			.navbar a {
+				text-decoration: none;
+				color: white;
+				padding: 15px;
+				float: left;
+				margin: 0;
+                                 float:right;
+                                 font-family: 'Titillium Web', sans-serif;
+                                 
+			}
+
+			.icon{
+				float: right;
+				display:none;
+			}
+
+			.navbar a:hover {
+				text-decoration: underline;
+                             
+
+			}
+                            .navbar span{
+                           position: absolute;
+                      margin: 20px;
+                     font-size:30px;
+                       font-family: 'Limelight', cursive;
+                       
+                       
+                      }
+                     
+                            .navbar img{
+                              height:60px;
+                              
+                               }
+
+			.active {
+				background-color:#3da042;;
+				color: white;
+			}
+
+			
+			@media only screen and (max-width: 600px){
+
+
+
+				.navbar a:not(:first-child) {
+					display:none;
+				}
+
+				.navbar {
+					position: relative;
+				}
+
+				.navbar a.icon {
+					display: block;
+					float:right;
+
+
+					position: absolute;
+					top: 0;
+					right: 0;
+
+								
+				}
+
+
+				div.navbar.clicked a {
+					
+					display: block;
+					float: none;
+
+				}
+				
+				
+
+				
+
+				
+
+			}
+
+  .col-12 a{
+  float:right;
+   text-decoration:none;
+    margin:20px;
+   padding:0px;
+    color:white;
+   font-family: 'Abel', sans-serif;
+  }
+  .col-8{
+  font-size:30px;
+  color:#0C5275;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .col-8 h3{
+   color:#169252;
+   }
+  .col-4 a{
+  color:#F38D4F;
+  }
+  .col-4 a:hover{
+  color:red;
+    
+  }
+     .row::after{
+    content: "";
+     clear:both;
+     display:table;
+   }
+  .col-12 span{
+   font-size:50px;
+     font-family: 'Sigmar One', cursive;
+  }
+   
+   [class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+  
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+  
+  @media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+  .row h4{
+  text-align:center;
+   font-size:30px;
+     font-family: 'Titillium Web', sans-serif;
+   color:#3BBF45;
+  
+  }
+  .pa{
+  font-size:20px;
+    font-family: 'Titillium Web', sans-serif;
+   color:green;
+  }
+  .Introduction h4{
+  text-align:center;
+   font-size:25px;
+     font-family: 'Titillium Web', sans-serif;
+     color:#0C5275;
+  }
+  
+ .col-8 a{
+  color:black;
+  }
+   .col-12 img{
+   height:70px;
+   
+   }
+  .col-4 img{
+  width:100%;
+  height:auto;
+  }
+  .col-4 h4{
+  color:#F38D4F;
+}
+ .col-4{
+  font-family: 'Titillium Web', sans-serif;
+
+  font-size:30px;
+   color:#3BBF45;
+  }
+   .col-6{
+    font-family: 'Titillium Web', sans-serif;
+
+  font-size:30px;
+   color:#3BBF45;
+  }
+   
+  .col-2 img{
+  width:100%;
+  height:auto;
+  }
+  .gifimage img{
+  width:1200px;
+  height:600px;
+  }
+
+   .col-3 img{
+  width:100%;
+  height:auto;
+  }
+  .pa p{
+  float:right;
+  }
+  .col-l-6{
+  background-color:green;
+   }
+   
+
+  
+  .fa{
+  padding:20px;
+  font-size: 30px;
+  width:65px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:50%;
+   
+}
+
+.fa:hover {
+    opacity: 0.5;
+     color:blue;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  .unactive{
+   background-color:#5dc75d;;
+  }
+  .col-8 a{
+   text-decoration:none;
+    margin:15px;
+     padding:10px;
+  }
+  .col-8 h3{
+  text-align:center;
+  }
+  .fotter2{
+  background-color:#298a29;
+   font-size:30px;
+    text-align:center;
+   padding:15px;
+    color:#040404;
+  }
+   </style>
+  
+</head>
+<body>
+  
+
+   <div class="navbar" id="nav">
+         <img src="images/2.png">
+         <span>Owls</span>          
+           <a href="conservation.html">CONSERVATION</a>
+          <a href="species.html">SPECIES</a>
+          <a href="information.html">INFORMATION</a>
+
+	<a href="javascript:void(0);" class="icon" onclick="handleClick()">
+				<i class="fa fa-bars"></i>           
+	</a>
+        <a href="home.html" class="active">Home</a>	
+  </div>
+
+       		
+      <script>
+
+
+			function handleClick(){
+
+				let nav = document.getElementById("nav");
+
+
+				if(nav.className === "navbar"){
+					
+					nav.className += " clicked";
+
+
+				}	
+				else{
+					nav.className = "navbar";
+
+					
+				}
+
+				
+
+			}
+
+		</script>
+
+
+
+
+  <div class="row">
+   <div class="col-8 col-s-8">
+    <h3>Facts About Owls</h3>
+    <p>Owls are nocturnal birds of prey found in most regions of Earth except Antarctica.</p>
+    
+        </div>
+     <div class="col-4 col-s-4">
+      <img src="images/3.jpg">
+     </div>
+  </div>
+   <div class="types">
+       <div class="col-4 col-s-4">
+           <h4>OWL INFORMATION</h4>
+             <p>Habitat, distribution, feeding, reproduction, evolution and more information about owls</p>
+              <a href="information.html">Read More</a>
+       </div>
+       <div class="col-4 col-s-4">
+           <h4>TYPES OF OWLS</h4>
+            <p>Facts about some of the best know species or families of owls like the snowy owl, the barn owl, great horned owl</p>
+                <a href="species.html">Read More</a>
+       </div>
+        <div class="col-4 col-s-4">
+          <h4>OWL CONSERVATION</h4>
+           <p>There are some endangered species of owls and the conservation efforts made to preserve them.</p>
+               <a href="conservation.html">Read More</a>
+       </div>
+     </div>
+   <div class="row">
+    <h4>OWL FACTS AND INFORMATION</h4>
+     <div class="col-3 col-s-3">
+       <img src="images/4.jpg">
+     </div>
+     <div class="col-3 col-s-3">
+         <img src="images/5.jpg">
+     </div>
+      <div class="col-3 col-s-3">
+          <img src="images/6.jpg">
+     </div>
+      <div class="col-3 col-s-3">
+          <img src="images/7.jpg">
+     
+     </div>
+    <div class="pa">
+     <p>Facts about Great Horned Owls, Barn Owls, Snowy Owls, Barred Owls and many others. Anatomy, Feeding, Habitat, Evolution, Predators and Reproduction.</p>
+    
+    </div>  
+    </div>
+      <div class="Introduction">
+          <h4>Introduction to Owls</h4>
+         <div class="col-6 col-6">
+           Owls are very interesting birds, and one that many other types of birds are afraid of. In fact, fake owls are
+           often placed on top of buildings to keep pigeons and other types of birds from making nests there.
+            The owl is said to be a symbol of wisdom and they make a unique sound at
+           night that is distinctly identifiable.
+         </div>
+        <div class="col-6 col-s-6">
+          <p>In many cultures the owl is a sacred animal and one that humans don’t bother very much. Yet there are plenty of locations out
+           there where their natural habitat continues to be taken away for humans to use that area for something else. As a result it has reduced the overall 
+      population of many species drastically.</p>
+        </div>
+     </div>
+  <div class="fotter">
+         <div class="col-8 fotter1">
+          <h3>LINKS<i class="fa fa-bars"></i></h3>
+        <a href="home.html"class="unactive">HOME</a>
+           <a href="information.html">INFORMATION</a>
+        <a href="species.html">SPECIES</a>
+         <a href="conservation.html">CONSERVATION</a>
+     </div>
+       <div class="col-4 fotter1">
+       <h3>SOCIAL<i class="fa fa-bars"></i></h3>
+                   <a href="https://www.facebook.com/earthmazingofficial" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter"></a>
+               <a href="http://www.goole.com/" class="fa fa-google"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+       
+   </div>
+ </div>
+   <div class="col-s-12 col-l-12 fotter2">
+     Copyright&copy:2021 All Rights Reserved
+   </div>
+       
+</body>
+</html>
